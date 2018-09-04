@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="pruebaAngular">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Ejemplo Directivas y Scope</title>
+</head>
+
+<body ng-controller="ejemploAdsiCtrl">
+	<h1>INGRESAR NÚMEROS PARA UNA OPERACION MATEMATICA </h1>
+	<h3>Número 1: <input type="text" ng-model='numero1' />
+	<h3>Número 2: <input type="text" ng-model='numero2' />
+	<input type="button" value="Sumar" ng-click="sumar()"/>
+  	<input type="button" value="Restar" ng-click="restar()"/>
+  	<input type="button" value="Multiplicar" ng-click="multiplicar()"/>
+  	<input type="button" value="Dividir" ng-click="dividir()"/>
+  	<input type="button" value="Concatenar" ng-click="concatenar()"/>
+	<h2>El resultado de la operación es: {{ resultado }} </h2>
+	<h3>{{ message }}</h3>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js">
+
+	</script>
+	<script src="modulo.js">
+
+	</script>
+</body>
+
+</html>
